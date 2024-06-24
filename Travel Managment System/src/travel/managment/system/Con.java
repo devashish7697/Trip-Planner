@@ -7,7 +7,7 @@ public class Con {
     Con() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql:///travelmanagmentsystem","root","Goldy45@" );
+            c = DriverManager.getConnection("jdbc:mysql:///travelmanagmentsystem","your_databse_username","your_databse_password" );
             s = c.createStatement();
         } catch (Exception e) {
             e.printStackTrace();
